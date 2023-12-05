@@ -12,10 +12,63 @@ Fingerprints can be used in all sorts of ways:
 
 This repository processes an attendance registration system, whereby the person's gender is the underlying distinguishing model for their classification. This breakdown decreases the time it takes for looping over the dataset to compare and acquire fingerprint similarity with those in the database. An image classification model is built as the underlying model to separate the images by gender.
 
-### Prerequisites
+
+
+
+# Running The Code Locally
+## Prerequisites
 
 - Python
 - OpenCV
+- TensorFlow
+- Streamlit
+
+## Setup
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/29_AI_Final_Project.git
+    ```
+
+2. Navigate to the project directory:
+
+3. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## How to Run
+
+1. Execute the Streamlit app:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+2. Open your web browser and go to [http://localhost:8501](http://localhost:8501).
+
+3. Click on "Begin Record Attendance" to start the session.
+
+4. Upload fingerprint images to verify attendance.
+
+5. Click on "End Recording" to finish the session.
+
+6. The attendance details will be saved to a CSV file named `attendance.csv`.
+
+## Project Structure
+
+- `app.py`: Main Streamlit application script.
+- `Attendance_Gender.h5`: Pre-trained gender prediction model.
+- `All/`: Folder containing fingerprint images for both males and females.
+
+
+
+
+
+
+
 
 ### Algorithm Pipeline
 
